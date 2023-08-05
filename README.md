@@ -13,24 +13,24 @@ The sample data to evaluate our model can be found in the `data` folder, which c
 - cPickle is used in the project to store the preprocessed data and parameters. While appearing some warnings, pytorch 0.3.0 can also be used.
 
 ## Project Structure
-/codes
-  main.py
-  model.py         # define models
-  sparse_traces.py # foursquare data preprocessing
-  train.py         # define tools for train the model
+- /codes
+  - main.py
+  - model.py         # define models
+  - sparse_traces.py # foursquare data preprocessing
+  - train.py         # define tools for train the model
 
-/pretrain
-  /simple
+- /pretrain
+  - /simple
     - res.m        # pretrained model file
     - res.json     # detailed evaluation results
     - res.txt      # evaluation results
-  /simple_long
-  /attn_local_long
-  /attn_avg_long_user
+  - /simple_long
+  - /attn_local_long
+  - /attn_avg_long_user
 
-/data              # preprocessed foursquare sample data (pickle file)
-/docs              # paper and presentation file
-/results           # the default save path when training the model
+- /data              # preprocessed foursquare sample data (pickle file)
+- /docs              # paper and presentation file
+- /results           # the default save path when training the model
 
 ## Usage
 
@@ -56,13 +56,13 @@ The codes contain four network model (simple, simple_long, attn_avg_long_user, a
 python main.py --model_mode=attn_avg_long_user --pretrain=0
 
 ```
-Other Parameters (refer to [main.py](https://github.com/vonfeng/DeepMove/blob/master/codes/main.py):
+Other Parameters (refer to [main.py](https://github.com/vonfeng/DeepMove/blob/master/codes/main.py) ):
 
-For Training:
-learning_rate, lr_step, lr_decay, L2, clip, epoch_max, dropout_p
+- For Training:
+  - learning_rate, lr_step, lr_decay, L2, clip, epoch_max, dropout_p
 
-Model Definition:
-loc_emb_size, uid_emb_size, tim_emb_size, hidden_size, rnn_type, attn_type
+- Model Definition:
+  - loc_emb_size, uid_emb_size, tim_emb_size, hidden_size, rnn_type, attn_type
 
 History Mode Options:
 avg, avg, whole
