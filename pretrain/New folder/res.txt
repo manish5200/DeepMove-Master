@@ -1,0 +1,32 @@
+{
+    "args": {
+        "loc_emb_size": 500,
+        "uid_emb_size": 40,
+        "voc_emb_size": 50,
+        "tim_emb_size": 10,
+        "hidden_size": 500,
+        "dropout_p": 0.3,
+        "data_name": "foursquare",
+        "learning_rate": 0.0005,
+        "lr_step": 2,
+        "lr_decay": 0.1,
+        "L2": 1e-05,
+        "act_type": "selu",
+        "optim": "RAdam",
+        "attn_type": "dot",
+        "clip": 5.0,
+        "rnn_type": "LSTM",
+        "epoch_max": 20,
+        "history_mode": "avg",
+        "model_mode": "attn_local_long"
+    },
+    "metrics": {
+        "train_loss": [],
+        "valid_loss": [
+            6.6644115235204415
+        ],
+        "accuracy": [
+            0.12962626540473401
+        ]
+    }
+}
